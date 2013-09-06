@@ -1,0 +1,5 @@
+Description:
+    Install Manager migrations and initializers.
+
+Example:
+    rails generate managr:install
