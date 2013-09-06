@@ -1,0 +1,3 @@
+[submodule "managr"]
+	path = managr
+	url = git@github.com:kurbmedia/managr.git
