@@ -7,17 +7,18 @@ require "managr/version"
 Gem::Specification.new do |s|
   s.name        = "managr"
   s.version     = Managr::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Managr."
-  s.description = "TODO: Description of Managr."
+  s.authors     = ["Brent Kirby"]
+  s.email       = ["dev@kurbmedia.com"]
+  s.homepage    = "http://kurbmedia.com"
+  s.summary     = "Managr is a framework for building complex project and time management systems."
+  s.description = "Managr is a framework for building complex project and time management systems."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency("rails", ">= 3.2.6", "< 5")
-
+  s.add_dependency("jbuilder", "~> 1.5")
+  
   s.add_development_dependency("rspec", ">= 2.14.0")
   s.add_development_dependency("rspec-rails", ">= 2.14.0")
   s.add_development_dependency("machinist", "~> 2.0")

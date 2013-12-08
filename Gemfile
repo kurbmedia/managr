@@ -1,14 +1,22 @@
 source "https://rubygems.org"
 
-# Declare your gem's dependencies in managr.gemspec.
+# Declare your gem's dependencies in transit.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
 
-# Declare any dependencies that are still in development here instead of in
-# your gemspec. These might include edge Rails or gems from your path or
-# Git. Remember to move these dependencies to your gemspec before releasing
-# your gem to rubygems.org.
+group :test do
+  gem 'simplecov', :require => false
+  gem 'rake'
+  gem 'guard'
+  gem "guard-rspec"
+  gem 'rb-fsevent'
+  gem 'listen'
+  gem 'terminal-notifier-guard'
+  gem 'shoulda-matchers', '~> 2.2.0'
+  gem 'machinist', '~> 2.0'
+end
 
-# To use debugger
-# gem 'debugger'
+group :doc do
+  gem 'yard', '0.8.5.2'
+end

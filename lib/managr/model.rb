@@ -8,10 +8,7 @@ module Managr
     extend ActiveSupport::Concern
     
     included do
-      
-      # Register this class 
-      Managr.add_model(self)
+      Managr.manage(self) # Register this class 
     end
-    
   end
 end
