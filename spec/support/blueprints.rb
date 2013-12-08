@@ -21,4 +21,6 @@ Managr::User.blueprint do
   first_name { "Test" }
   last_name  { "User" }
   email { "user#{sn}@testing.com" }
+  password { "testpass1" }
+  password_confirmation{ "testpass1" }
 end
