@@ -16,5 +16,10 @@ describe Managr::Task do
       should belong_to(
         :category)
     end
+    
+    it 'belongs to a creator' do
+      should belong_to(
+        :creator)
+    end
   end
 end

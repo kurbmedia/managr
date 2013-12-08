@@ -1,5 +1,5 @@
 module Managr
-  class TaskCategory < Category
+  class TaskCategory < Managr::Category
     has_many :tasks
   end
 end

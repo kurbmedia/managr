@@ -4,10 +4,12 @@ require 'set'
 module Managr
   extend self
   mattr_accessor :resources
-  @@resources = Set.new([])
+  @@resources = Set.new([:tasks])
   
-  autoload :Model, 'managr/model'
-  
+  autoload :Assignable, 'managr/assignable'
+  autoload :Model,      'managr/model'
+  autoload :Taggable,   'managr/taggable'
+  autoload :Scheduling, 'managr/scheduling'
   
   ##
   # Run during the initial installation/migration to setup 
